@@ -1,19 +1,19 @@
-html {
+/* html {
     margin: 0;
     padding: 0;
     border: 0;
     overflow: hidden;
     width: 100vw;
-  }
-  
+  } */
+
 #firstExample {
-    height: 100px;
-    width: 100px;
-    position: relative;
-    margin: 5px;
-    background-color: red;
-    animation: firstExample 4s ease-in-out 2s infinite normal;
-    /*  (animation above is refering to all these properties below) 
+  height: 100px;
+  width: 100px;
+  position: relative;
+  margin: 5px;
+  background-color: red;
+  animation: firstExample 4s ease-in-out 2s infinite normal;
+  /*  (animation above is refering to all these properties below) 
     animation-name: square;
     animation-duration: 4s;
     animation-timing-function: ease-in-out;
@@ -22,38 +22,38 @@ html {
     animation-direction: normal;
     animation-fill-mode: backwards;
     animation-play-state: running;  */
-  }
+}
 
 @keyframes firstExample {
 
   0% {
-      background-color: red;
-      left: 10vw;
-      top: 10vh;
+    background-color: red;
+    left: 10vw;
+    top: 10vh;
   }
 
   25% {
-      background-color: lime;
-      border-radius: 50%;
-      left: 80vw;
-      top: 10vh;
+    background-color: lime;
+    border-radius: 50%;
+    left: 80vw;
+    top: 10vh;
   }
 
   50% {
-      background-color: pink;
-      left: 80vw;
-      top: 70vh;
+    background-color: pink;
+    left: 80vw;
+    top: 70vh;
   }
 
   75% {
-      background-color: orange;
-      left: 10vw;
-      top: 70vh;
+    background-color: orange;
+    left: 10vw;
+    top: 70vh;
   }
 
   100% {
-      background-color: blue;
-      left: 10vw;
-      top: 10vh;
+    background-color: blue;
+    left: 10vw;
+    top: 10vh;
   }
 }
