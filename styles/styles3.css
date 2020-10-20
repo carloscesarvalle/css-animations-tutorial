@@ -1,216 +1,272 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: lato;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* box-sizing: border-box; */
+  font-family: lato;
+  font-size: 1.1rem;
+  overflow-x: hidden;
+
+  /* color: white; */
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 6vh;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 17.5rem;
+  height: auto;
+  padding-top: 1.75rem;
+}
+
+section:nth-child(odd) {
+  box-sizing: border-box;
+  background: antiquewhite;
 }
 
 #sky {
-    position: absolute;
-    bottom: 30vh;
-    /* z-index: 1; */
+  position: absolute;
+  bottom: 30vh;
+  width: 100vw;
+  height: 100vh;
+  /* z-index: 1; */
 }
 
-
 #background {
-    position: absolute;
-    bottom: 0vh;
-    /* z-index: 2; */
+  position: absolute;
+  bottom: 0vh;
+  width: 100vw;
+  height: 100vh;
+  /* z-index: 2; */
 }
 
 #main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  /* top: 6vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
+.box {
+  z-index: 2;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  animation: box 2s linear infinite normal;
+}
 
-#box {
-    z-index: 2;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 27.5vh;
-    animation: box 2s linear infinite normal;
+.first {
+  top: 27.5vh;
+}
+
+.second {
+  top: 27.5vh;
+  left: 5vw;
+}
+
+.third {
+  top: 27.5vh;
+  right: 5vw;
 }
 
 @keyframes box {
-    0% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
 
-    25% {
-        transform: scale(1);
-    }
+  25% {
+    transform: scale(1);
+  }
 
-    50% {
-        transform: scale(1);
-    }
+  50% {
+    transform: scale(1);
+  }
 
-    75% {
-        transform: scale(1.05);
-    }
+  75% {
+    transform: scale(1.05);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 
 #pow {
-    position: absolute;
-    top: 38vh;
-    left: 45vw;
-    width: 120px;
-    height: 120px;
-    z-index: 4;
-    animation: pow 2s ease-in-out infinite normal;
+  position: absolute;
+  top: 38vh;
+  left: 45vw;
+  width: 120px;
+  height: 120px;
+  z-index: 4;
+  animation: pow 2s ease-in-out infinite normal;
 }
 
 @keyframes pow {
-    0% {
-        transform: scale(0);
-    }
+  0% {
+    transform: scale(0);
+  }
 
-    50% {
-        transform: scale(0);
-    }
+  50% {
+    transform: scale(0);
+  }
 
-    62.5% {
-        transform: scale(1);
-    }
+  62.5% {
+    transform: scale(1);
+  }
 
-    75% {
-        transform: scale(0);
-    }
+  75% {
+    transform: scale(0);
+  }
 
-    100% {
-        transform: scale(0);
-    }
+  100% {
+    transform: scale(0);
+  }
 }
 
 #coin {
-    z-index: 1;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 30vh;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 30vh;
 }
 
 #mario {
-    width: 256px;
-    height: 512px;
-    position: absolute;
-    top: 45vh;
-    z-index: 3;
-    animation: mario 2s linear infinite normal;
+  width: 256px;
+  height: 512px;
+  position: absolute;
+  top: 45vh;
+  z-index: 3;
+  animation: mario 2s linear infinite normal;
 }
 
 @keyframes mario {
-    0% {
-        top: 45vh;
-    }
+  0% {
+    top: 45vh;
+  }
 
-    25% {
-        top: 43.5vh;
-    }
+  25% {
+    top: 43.5vh;
+  }
 
-    50% {
-        top: 41.25vh;
-    }
+  50% {
+    top: 41.25vh;
+  }
 
-    75% {
-        top: 43.5vh;
-    }
+  75% {
+    top: 43.5vh;
+  }
 
-    100% {
-        top: 45vh;
-    }
+  100% {
+    top: 45vh;
+  }
 }
 
 #marioShadow {
-    width: 200px;
-    height: 50px;
-    position: absolute;
-    bottom: 15vh;
-    z-index: 2;
-    opacity: 0.15;
-    animation: marioShadow 2s linear infinite normal;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  bottom: 15vh;
+  z-index: 2;
+  opacity: 0.15;
+  animation: marioShadow 2s linear infinite normal;
 }
 
 @keyframes marioShadow {
-    0% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
 
-    25% {
-        transform: scale(0.5);
-    }
+  25% {
+    transform: scale(0.5);
+  }
 
-    50% {
-        transform: scale(0.25);
-    }
+  50% {
+    transform: scale(0.25);
+  }
 
-    75% {
-        transform: scale(0.5);
-    }
+  75% {
+    transform: scale(0.5);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 
-
 #koopa {
-    z-index: 3;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    bottom: 8vh;
-    right: 8vw;
+  z-index: 3;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: 8vh;
+  right: 8vw;
 }
 
 #koopaShadow {
-    width: 100px;
-    height: 25px;
-    bottom: 8vh;
-    right: 8.75vw;
-    position: absolute;
-    z-index: 2;
-    opacity: 0.15;
+  width: 100px;
+  height: 25px;
+  bottom: 8vh;
+  right: 8.75vw;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.15;
 }
 
 #dacoFlying {
-    z-index: 3;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 8vh;
-    left: -5vw;
-    animation: dacoFlying 2s linear infinite normal;
+  z-index: 3;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 8vh;
+  left: -5vw;
+  animation: dacoFlying 2s linear infinite normal;
 }
 
 @keyframes dacoFlying {
-    0% {
-        transform: translate(-5vw, 8vh);
-    }
+  0% {
+    transform: translate(-5vw, 8vh);
+  }
 
-    25% {
-        transform: translate(12vw, 12vh);
-    }
+  25% {
+    transform: translate(12vw, 12vh);
+  }
 
-    50% {
-        transform: translate(15vw, 15vh);
-    }
+  50% {
+    transform: translate(15vw, 15vh);
+  }
 
-    75% {
-        transform: translate(12vw, 12vh);
-    }
+  75% {
+    transform: translate(12vw, 12vh);
+  }
 
-    100% {
-        transform: translate(8vw, 8vh);
-    }
+  100% {
+    transform: translate(8vw, 8vh);
+  }
+}
+
+#jumping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 6;
+}
+
+#yoshi {
+  width: 10rem;
+  height: auto;
+  position: absolute;
+  z-index: 5;
 }
